@@ -30,6 +30,7 @@ Others (points will be given depending on feature complexity and quality)
 **What to Submit?**
 Your GitHub Repo URL, which includes README.md (names, features, individual contributions), and uses branches (for ADT implementations of queue, stack, graph, etc, and merges back to main) and contains at least 15 total commits.
 
+/-----------------------------------------------------------------------------------------------------------------------------------------/
 
 **Group member Names**
 Member 1: Enzo Salum
