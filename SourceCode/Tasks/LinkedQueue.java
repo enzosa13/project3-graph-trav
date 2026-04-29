@@ -1,11 +1,3 @@
-/**
-   A class that implements a queue of objects by using
-   a chain of linked nodes that has both head and tail references.
- 
-   @author Frank M. Carrano
-   @author Timothy M. Henry
-   @version 5.0
-*/
 public final class LinkedQueue<T> implements QueueInterface<T>
 {
    private Node firstNode; // References node at front of queue
@@ -17,8 +9,52 @@ public final class LinkedQueue<T> implements QueueInterface<T>
 		lastNode = null;
 	} // end default constructor
 
-//  < Implementations of the queue operations go here. >
-//  . . .
+//  < Implementations of the queue operations go here. > Done by Enzo Salum (note to remind myself for README)
+	@Override
+	public void enqueue(T newEntry) {
+		Node newNode = new Node(newEntry);
+
+		if (isEmpty()) {
+			firstNode = newNode;
+		} else {
+			lastNode.setNextNode(newNode);
+		}
+
+		lastNode = newNode;
+	}
+
+	@Override
+	public T dequeue() {
+		if (isEmpty()) return null;
+
+		T front = firstNode.getData();
+		firstNode = firstNode.getNextNode();
+
+		if (firstNode == null) {
+			lastNode = null;
+		}
+
+		return front;
+	}
+
+	@Override
+	public T getFront() {
+		if (isEmpty()){
+        	return null;
+      	} 
+		return firstNode.getData();
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return firstNode == null;
+	}
+
+	@Override
+	public void clear() {
+		firstNode = null;
+		lastNode = null;
+	}
 
 	private class Node
 	{

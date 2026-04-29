@@ -1,4 +1,4 @@
-import java.util.EmptyStackException;
+//import java.util.EmptyStackException;
 /**
     A class of stacks whose entries are stored in a chain of nodes.
     @author Frank M. Carrano and Timothy M. Henry
@@ -7,14 +7,45 @@ import java.util.EmptyStackException;
 public final class LinkedStack<T> implements StackInterface<T>
 {
 	private Node topNode; // References the first node in the chain
+   
   
    public LinkedStack()
    {
       topNode = null;
    } // end default constructor
   
-//  < Implementations of the stack operations go here. >
-//  . . .
+//  < Implementations of the stack operations go here. > Done by Enzo Salum (note to remind myself for README)
+   @Override
+   public void push(T newEntry) {
+      topNode = new Node(newEntry, topNode);
+   }
+
+   @Override
+   public T pop() {
+      if (isEmpty()) return null;
+
+      T top = topNode.getData();
+      topNode = topNode.getNextNode();
+      return top;
+   }
+
+   @Override
+   public T peek() {
+      if (isEmpty()){
+         return null;
+      } 
+      return topNode.getData();
+   }
+
+   @Override
+   public boolean isEmpty() {
+      return topNode == null;
+   }
+
+   @Override
+   public void clear() {
+      topNode = null;
+   }
 
 	private class Node
 	{
