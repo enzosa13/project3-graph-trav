@@ -15,7 +15,6 @@ __Task Descriptions:__
 
 The graph: {V, E} where V={ A, B, C, D, E, F, G, H, I },
 E = { (A,B), (A, D), (A, E), (B, E), (D, G), (E, F), (E, H), (G, H), (F, C), (F, H), (H, I), (C, B), (I, F) }
-The graph: {V, E} where V={ A, B, C, D, E, F, G, H, I }, E = { (A,B), (A, D), (A, E), (B, E), (D, G), (E, F), (E, H), (G, H), (F, C), (F, H), (H, I), (C, B), (I, F) }
 
 **(60 pts)Task 2**: Write Java code that creates the graph above and implements an iterative algorithm that performs a depth-first traversal of the graph, beginning at the node labeled .  Please display nodes in order in which vertices are visited. (Note: please use stack for your iterative algorithm, not recursive method)
 
