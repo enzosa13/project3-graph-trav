@@ -42,6 +42,6 @@ Member 2: /
 Member 3: /
 
 **Individual Contributions**
-Member 1: Enzo Salum - created repo, added source code / ...
+Member 1: Enzo Salum - created repo, added necessary source code / modified Queue and Stack classes / added Graph, Main, BSF java files
 Member 2:  - /
 Member 3:  - /
