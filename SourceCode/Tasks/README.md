@@ -1,1 +1,1 @@
-**Folder for where the files for the takss will be written**
+**Task Folder is for where the files for the tasks will be written**
