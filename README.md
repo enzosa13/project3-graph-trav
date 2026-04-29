@@ -32,12 +32,12 @@ Your GitHub Repo URL, which includes README.md (names, features, individual cont
 
 **Group member Names**
 Member 1: Enzo Salum
-Member 2: 
+Member 2: Diego Urena
 Member 3: 
 
 **Features**
 Member 1: Enzo Salum / 
-Member 2: /
+Member 2: Diego Urena /
 Member 3: /
 
 **Individual Contributions**
