@@ -25,5 +25,15 @@ public class Main {
 
         BFS bfs = new BFS(g);
         bfs.traverse("A");
+
+        Map<String, String> bfsParent = BFS.traverse(g, "A");
+        Graph bfsTree = Graph.buildTree(bfsParent);
+        System.out.print("\nBFS Tree Traversal: ");
+        BFS.traverse(bfsTree, "A");
+
+        Map<String, String, dfsParent> = DFS.traverse(g, "A");
+        Graph dfsTree = Graph.buildTree(dfsParent);
+        System.out.print("\n DFS Tree Traversal: ");
+        DFS.traverse(dfsTree, "A");
     }
 }
