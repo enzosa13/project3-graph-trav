@@ -18,4 +18,14 @@ public class Graph {
     public List<String> getNeighbors(String v) {
         return adjList.get(v);
     }
+
+    public static Graph buildTree(Map<String, String> parent) {
+        Graph tree = new Graph();
+
+        for (String child : parent.keySet()) {
+            String p = parent.get(child);
+            tree.addEdge(p, child);
+        }
+        return tree;
+    }
 }
