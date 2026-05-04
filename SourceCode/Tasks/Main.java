@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
         Graph g = new Graph();
@@ -23,12 +25,27 @@ public class Main {
         g.addEdge("C","B");
         g.addEdge("I","F");
 
+        //task 1
         BFS bfs = new BFS(g);
         bfs.traverse("A");
 
         System.out.println();
 
+        //task 2
         DFS dfs = new DFS(g);
         dfs.traverse("A");
+      
+        System.out.println();
+
+        //task 3
+        Map<String, String> bfsTree = Tree.bfsTree(g, "A");
+        Tree.printTree(bfsTree);
+
+        System.out.println();
+
+        Map<String, String> dfsTree = Tree.dfsTree(g, "A");
+        Tree.printTree(dfsTree);
+      
+        System.out.println();
     }
 }
