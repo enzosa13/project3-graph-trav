@@ -34,7 +34,8 @@ public class Main {
         //task 2
         DFS dfs = new DFS(g);
         dfs.traverse("A");
-        System.out.println("\n");
+      
+        System.out.println();
 
         //task 3
         Map<String, String> bfsTree = Tree.bfsTree(g, "A");
@@ -44,5 +45,7 @@ public class Main {
 
         Map<String, String> dfsTree = Tree.dfsTree(g, "A");
         Tree.printTree(dfsTree);
+      
+        System.out.println();
     }
 }

@@ -34,14 +34,14 @@ Your GitHub Repo URL, which includes README.md (names, features, individual cont
 **Group member Names**
 Member 1: Enzo Salum
 Member 2: Diego Urena
-Member 3: 
+Member 3: Mark Gonzalez
 
 **Features**
 Member 1: Enzo Salum / 
 Member 2: Diego Urena /
-Member 3: /
+Member 3: Mark Gonzalez/
 
 **Individual Contributions**
 Member 1: Enzo Salum - created repo, added necessary source code / modified Queue and Stack classes / added Graph, Main, BSF java files
-Member 2:  - /
+Member 2:  Mark gonzalez- implented the DFS traversal method/
 Member 3:  - /
