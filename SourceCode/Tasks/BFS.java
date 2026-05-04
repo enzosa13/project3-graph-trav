@@ -28,27 +28,4 @@ public class BFS {
             }
         }
     }
-
-    public Map<String, String> traverse(Graph graph, String start) {
-        Set<String> visited = new HashSet<>();
-        Queue<String> queue = new LinkedList<>();
-        Map<String, String> parent = new HashMap<>();
-
-        queue.add(start);
-        visited.add(start);
-
-        while (!queue.isEmpty()) {
-            String node =  queue.poll();
-            System.out.print(node + " ");
-
-            for (String neighbor : graph.getNeighbors(node)) {
-                if (!visited.contains(neighbor)) {
-                    visited.add(neighbor);
-                    parent.put(neighbor, node);
-                    queue.add(neighbor);
-                }
-            }
-        }
-        return parent;
-    }
 }
