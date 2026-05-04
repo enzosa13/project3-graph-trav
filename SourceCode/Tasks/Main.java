@@ -25,5 +25,10 @@ public class Main {
 
         BFS bfs = new BFS(g);
         bfs.traverse("A");
+
+        System.out.println();
+
+        DFS dfs = new DFS(g);
+        dfs.traverse("A");
     }
 }
